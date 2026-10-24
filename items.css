@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --green:rgb(0, 92, 90);
+    --brown:rgba(23, 21, 16, 0.558);
+    --font:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --color:rgb(184, 128, 0);
+}
+a{
+    text-decoration: none;
+    color: var(--color);
+}
+.container{
+    min-height: 125vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: var(--green)
+}
+.header{
+    position:sticky;
+    top: 0;
+    display: flex;
+    height: 11vh;
+    background-color: var(--brown);
+}
+.logo{
+    padding-top: 2px;
+    width: 20vh;
+    height: 10vh;
+    background-image: url("pictures/לוגו חתיך.png");
+    background-size: cover;
+    background-position: center center;
+}
+.nav{
+    flex-grow: 1;
+    display: flex;
+    flex-direction:row-reverse;
+    padding-top: 4vh;
+    justify-content:space-around;
+}
+.box{
+    height: 3vh;
+    width: 17vh;
+    color: var(--color);
+    font-size: 20px;
+    font-family:var(--font);
+    text-align: center;
+}
+.contact{
+    top: 100px;
+    left: 0;
+    padding-top: 0px;
+    padding-right: 10px;
+    position: fixed;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    transform: translateX(0%);
+    transition-duration: 2s;
+    box-shadow: 0 0 10px;
+}
+.contact .fa{
+    animation: none;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+}
+ul{
+    box-shadow: 0 0 5px;
+    text-align: start;
+    display: none;
+    position: fixed;
+    font-size: 17.5px;
+    position: fixed;
+    left: -138px;
+    top:0;
+}
+.contact:hover{
+        transform: translateX(165%);
+        transition-duration: 2s;
+    ul{
+        display: block;
+    }
+}
+.main{
+    color: var(--brown);
+    font-family: var(--font);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.itemsin{
+    text-align: center;
+    font-size: 50px;
+    color: var(--brown);
+}
+.pictures{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content:center;
+    align-content: start;
+    gap: 15px;
+    padding: 15px;
+}
+.pic{
+    height: 25vh;
+    width: 30vh;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 20px;
+    box-shadow: 0 0 20px;
+}
+p{
+    background-color: rgba(20, 30, 30, 0.689);
+    display: none;
+    text-align: center;
+    padding-top: 25%;
+    font-size: 35px;
+    color: var(--color);
+    height: 25vh;
+    width: 30vh;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: var(--font);
+}
+.pic:hover{
+    p{
+    display: block;
+}
+}
+.a{
+    background-image:url("pictures/חומט.webp");
+}
+.b{
+    background-image:url("pictures/אריות.webp");
+}
+.c{
+    background-image:url("pictures/לנגור.jpg");
+}
+.d{
+    background-image:url("pictures/ג'ירף.webp");
+}
+.e{
+    background-image:url("pictures/פלמינגו.webp");
+}
+.f{
+    background-image:url("pictures/סוריקטה.jpg");
+}
+.g{
+    background-image:url("pictures/פינגווין-שחור-רגל.webp");
+}
+.h{
+    background-image:url("pictures/טיגריס.webp");
+}
+.i{
+    background-image:url("pictures/Rainbow-lorikeet_flori.webp");
+}
+.j{
+    background-image:url("pictures/יחמור-פרסי.jpg");
+}
+.k{
+    background-image:url("pictures/macaws_nili.webp");
+}
+.l{
+    background-image:url("pictures/אוח.webp");
+}
+.m{
+    background-image:url("pictures/אורנג.webp");
+}
+.n{
+    background-image:url("pictures/יונת כתר.webp");
+}
+.o{
+    background-image:url("pictures/קנגורו.webp");
+}
+.p{
+    background-image:url("pictures/בלו מורפו.webp");
+}
+.q{
+    background-image:url("pictures/פנדה-אדומה.webp");
+}
+.r{
+    background-image:url("pictures/בסיליסק ירוק.webp");
+}
+.s{
+    background-image:url("pictures/זברה.jpg");
+}
+.t{
+    background-image:url("pictures/זיקית תימנית.webp");
+}
+.u{
+    background-image:url("pictures/טווס.webp");
+}
+.v{
+    background-image:url("pictures/פילים.webp");
+}
+.w{
+    background-image:url("pictures/ניאלה.webp");
+}
+.x{
+    background-image:url("pictures/טורקו-אדום-ציצית.webp");
+}
+.y{
+    background-image:url("pictures/שימפנזה.webp");
+}
+.z{
+    background-image:url("pictures/צפרדע-חץ-רעל.jpg");
+}
+.aa{
+    background-image:url("pictures/מפלס-עליון.jpg");
+}
+.bb{
+    background-image:url("pictures/מנדרילים.webp");
+}
+.cc{
+    background-image:url("pictures/חושתית.webp");
+}
+.dd{
+    background-image:url("pictures/פוני.webp");
+}
+.footer{
+    height: 20vh;
+    background-color: var(--brown);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 15vh;
+    grid-template-rows: 1fr;
+    justify-content: space-around;
+    padding-top: 10px;
+    color: var(--color);
+}
+.ff{
+    text-align: center;
+    grid-row: 1/2;
+    font-family: var(--font);
+}
+.place{
+    grid-column: 3/4;
+}
+.contact2{
+    grid-column: 2/3;
+}
+.cc{
+    grid-column: 1/2;
+}
+.logo1{
+    height:17vh;
+    width: 12vh;
+    background-image: url("pictures/לוגו.webp");
+    background-size:contain;
+    background-position: center center;
+}
+@media screen and (max-width:768px) {
+    .nav{
+        max-width: 80vw;
+    }
+    .logo{
+        position: absolute;
+        right: 5px;
+        height: 80px;
+        width: 110px;
+    }
+}

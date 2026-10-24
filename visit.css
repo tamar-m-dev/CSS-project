@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --green:rgb(0, 92, 90);
+    --brown:rgba(23, 21, 16, 0.558);
+    --font:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --color:rgb(184, 128, 0);
+}
+a{
+    text-decoration: none;
+    color: var(--color);
+}
+.container{
+    min-height:310vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: var(--green);
+    overflow-x: hidden;
+}
+.header{
+    position:sticky;
+    top: 0;
+    display: flex;
+    height: 11vh;
+    background-color: var(--brown);
+}
+.navvi{
+    padding-left: 18%;
+    padding-top: 30px;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    font-size: 20px;
+    font-family: var(--font);
+    font-weight: bold;
+}
+.navvi a{
+    height: 5VH;
+    width: 18VW;
+    color: var(--brown);
+}
+
+.logo{
+    padding-top: 2px;
+    width: 20vh;
+    height: 10vh;
+    background-image: url("pictures/לוגו חתיך.png");
+    background-size: cover;
+    background-position: center center;
+}
+.nav{
+    flex-grow: 1;
+    display: flex;
+    flex-direction:row-reverse;
+    padding-top: 4vh;
+    justify-content:space-around;
+}
+.box{
+    height: 3vh;
+    width: 17vh;
+    color: var(--color);
+    font-size: 20px;
+    font-family:var(--font);
+    text-align: center;
+}
+.contact{
+    top: 100px;
+    left: 0;
+    padding-top: 0px;
+    padding-right: 10px;
+    position: fixed;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    transform: translateX(0%);
+    transition-duration: 2s;
+    box-shadow: 0 0 10px;
+}
+.contact .fa{
+    animation: none;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+}
+.ul{
+    box-shadow: 0 0 5px;
+    text-align: start;
+    display: none;
+    position: fixed;
+    font-size: 17.5px;
+    position: fixed;
+    left: -138px;
+    top:0;
+}
+.contact:hover{
+        transform: translateX(165%);
+        transition-duration: 2s;
+    .ul{
+        display: block;
+    }
+}
+.main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: var(--brown);
+    font-family: var(--font);
+}
+.train{
+    position: relative;
+    height: 40px;
+    animation:7s ease-in-out 0ms 10000000 normal forwards bus;
+}
+.katar{
+    position: absolute;
+    top: -2px;
+    left: 20px;
+    height: 40px;
+    width: 60px;
+    border-radius: 10px;
+    background-color: red;
+}
+.ribu{
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    height: 35px;
+    width: 30px;
+    border-radius: 10px;
+    background-color: red;
+}
+.galil{
+    position: absolute;
+    left: -20px;
+    bottom: 0px;
+    height: 25px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: red;
+}
+.galil2{
+    position: absolute;
+    top: 2px;
+    left: -16px;
+    width: 12px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: rgb(38, 38, 38);
+}
+.wda{
+    left: 8px;
+}
+.wdb{
+    left: 35px;
+}
+.karon{
+    position: absolute;
+    top: 2.5px;
+    left: 100px;
+    height: 35px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+}
+.kb{
+    left: 200px;
+}
+.kc{
+    left: 300px;
+}
+.kd{
+    left: 400px;
+}
+.ke{
+    left: 500px;
+}
+.window{
+    position: absolute;
+    top: 5px;
+    height: 15px;
+    width: 15px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.692)
+}
+.a{
+    left: 10px;
+}
+.b{
+    left: 32.5px;
+}
+.c{
+    left: 55px;
+}
+.galgal{
+    position: absolute;
+    bottom: -25%;
+    left: 10%;
+    border-radius: 50%;
+    background-color: black;
+    height: 18px;
+    width: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gal{
+    background-image: conic-gradient(rgb(120, 119, 119),rgb(15, 13, 13),rgb(120, 119, 119),rgb(15, 13, 13),rgb(120, 119, 119),rgb(15, 13, 13));
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    animation:150ms ease-in-out 0s 10000000 normal forwards galgal;
+}
+.gb{
+    left: 65%;
+}
+.gbd{
+    left: 55%;
+}
+.gad{
+    left: 0%;
+}
+.kashar{
+    position: absolute;
+    top: 19px;
+    left: 80px;
+    background-color: black;
+    height: 4px;
+    width: 20px;
+}
+.kab{
+    left: 180px;
+}
+.kac{
+    left: 280px;
+}
+.kad{
+    left: 380px;
+}
+.kae{
+    left: 480px;
+}
+.list{
+    padding: 50px;
+    text-align: end;
+    font-family: var(--font);
+    font-size: 18px;
+    color: var(--brown);
+}
+ul{
+    list-style-type: none;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+.map{
+    height: 80vh;
+    width: 95vw;
+    background-image: url("pictures/מפה .png");
+    background-size: cover;
+    background-position: center center;
+    border-radius: 20px;
+    box-shadow: 0 0 20px;
+}
+.hur{
+    font-weight: bold ;
+    font-size: 50px;
+    font-family: var(--font);
+    text-align: center;
+    color: var(--brown);
+}
+table{
+    box-shadow: 0 0 20px;
+    border: solid 2px var(--brown);
+}
+td{
+    font-weight: bold ;
+    font-size: 22px;
+    font-family: var(--font);
+    border: solid 4px var(--brown);
+    text-align: center;
+    color: var(--brown);
+    height: 50px;
+    width: 300px;
+}
+.footer{
+    height: 20vh;
+    background-color: var(--brown);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 20vh;
+    grid-template-rows: 1fr;
+    justify-content: space-around;
+    padding-top: 10px;
+    color: var(--color);
+}
+.f{
+    text-align: center;
+    grid-row: 1/2;
+    font-family: var(--font);
+}
+.place{
+    grid-column: 3/4;
+}
+.contact2{
+    grid-column: 2/3;
+}
+.cc{
+    grid-column: 1/2;
+}
+.logo1{
+    height:17vh;
+    width: 12vh;
+    background-image: url("pictures/לוגו.webp");
+    background-size:contain;
+    background-position: center center;
+}
+@media screen and (max-width: 992px) {
+    .map{
+        height: 40vh;
+    }
+}
+@keyframes galgal{
+    0%{
+    transform: rotate(0deg);
+    }
+    25%{
+    transform: rotate(90deg);
+    }
+    50%{
+    transform: rotate(180deg);
+    }
+    75%{
+    transform: rotate(270deg);
+    }
+    100%{
+    transform: rotate(360deg);
+    }
+}
+@keyframes bus{
+    0%{
+        transform: translateX(153%);
+    }
+    100%{
+        transform: translateX(-155%);
+    }
+}
+@media screen and (max-width:992px){
+  @keyframes bus{
+    0%{
+        transform: translateX(105%);
+    }
+    100%{
+        transform: translateX(-105%);
+    }
+}  
+}
+@media screen and (max-width:768px){
+  @keyframes bus{
+    0%{
+        transform: translateX(120%);
+    }
+    100%{
+        transform: translateX(-170%);
+    }
+}  
+}
+@media screen and (max-width:768px) {
+    .nav{
+        max-width: 80vw;
+    }
+    .logo{
+        position: absolute;
+        right: 5px;
+        height: 80px;
+        width: 110px;
+    }
+}
